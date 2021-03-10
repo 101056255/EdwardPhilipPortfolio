@@ -31,6 +31,7 @@ body {
     animation-name: bio-up;
     animation-duration: 3s;
     position: relative;
+    display: inline-block;
 }
 
 .cover-pic {
