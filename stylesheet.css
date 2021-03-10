@@ -4,15 +4,22 @@ body {
 .header-text {
     color: aliceblue;
     font-size: 50px;
+    animation-name: bio-up;
+    animation-duration: 3s;
+    position: relative;
 }
 
 .subheader-text {
     color: aliceblue;
     font-size: 35px;
+    animation-name: bio-up;
+    animation-duration: 3s;
+    position: relative;
 }
 
 .page-title {
     margin-left: 80px;
+    margin-right: 80px;
 }
 
 .bio{
@@ -21,6 +28,9 @@ body {
     font-size: larger;
     padding: 15px;
     color: aliceblue;
+    animation-name: bio-up;
+    animation-duration: 3s;
+    position: relative;
 }
 
 .cover-pic {
@@ -73,7 +83,10 @@ li a:hover {
 
 table {
     width: 100%;
-    table-layout: fixed;
 }
 
+@keyframes bio-up {
+    from {top: 400px}
+    to {top: 0}
+}
 
