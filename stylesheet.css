@@ -5,6 +5,9 @@ body {
     color: aliceblue;
     font-size: 50px;
     animation-name: bio-up;
+    -webkit-animation-name: bio-up;
+    -moz-animation-name: bio-up;
+    -o-animation-name: bio-up;
     animation-duration: 3s;
     position: relative;
 }
@@ -13,6 +16,9 @@ body {
     color: aliceblue;
     font-size: 35px;
     animation-name: bio-up;
+    -webkit-animation-name: bio-up;
+    -moz-animation-name: bio-up;
+    -o-animation-name: bio-up;
     animation-duration: 3s;
     position: relative;
 }
@@ -29,9 +35,11 @@ body {
     padding: 15px;
     color: aliceblue;
     animation-name: bio-up;
+    -webkit-animation-name: bio-up;
+    -moz-animation-name: bio-up;
+    -o-animation-name: bio-up;
     animation-duration: 3s;
     position: relative;
-    display: inline-block;
 }
 
 .cover-pic {
@@ -87,6 +95,26 @@ table {
 }
 
 @keyframes bio-up {
+    from {top: 400px}
+    to {top: 0}
+}
+
+@-ms-keyframes bio-up {
+    from {top: 400px}
+    to {top: 0}
+}
+
+@-webkit-keyframes bio-up {
+    from {top: 400px}
+    to {top: 0}
+}
+
+@-moz-keyframes bio-up {
+    from {top: 400px}
+    to {top: 0}
+}
+
+@-o-keyframes bio-up {
     from {top: 400px}
     to {top: 0}
 }
