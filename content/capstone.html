@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Edward Philip</title>
-
     <link rel="stylesheet" href="../stylesheet.css">
+
 
 </head>
 <body style="background-image: url('../img/cover-image.png')">
@@ -13,12 +13,11 @@
     <ul>
         <li><a href="../index.html">Home</a></li>
         <li><a href="resume.html">Resume</a></li>
-        <li><a href="experience.html" class="active">Academic Experience</a></li>
-        <li><a href="capstone.html">Capstone</a></li>
+        <li><a href="experience.html">Academic Experience</a></li>
+        <li><a href="capstone.html" class="active">Capstone</a></li>
         <li style="float:right; margin-right: 5px"><a href="about.html">Behind the Code</a></li>
     </ul>
 </div>
-
 <table>
     <tr>
         <td>
@@ -27,19 +26,14 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img src="../img/weatherapp.png" alt="Weather App" class="work-pic">
+                                <img src="../img/snm1.PNG" alt="Weather App" class="work-pic">
                             </div>
                             <div class="flip-card-back">
-                                <h1>Open Weather API</h1>
+                                <h1>Stray No More</h1>
                                 <p>
-                                    This online weather app was built using React and the Open Weather API.
-                                    It is a live updating application that shows the current weather in the
-                                    Toronto Area.
-                                    <hr>
-                                    This was an individual project developed for Full Stack
-                                    Development course. The application features a dynamic page which changes
-                                    according to the weather at the current time. In this image, the image icon
-                                    is showing a clear night sky.
+                                   The Stray No More Mobile Android Application is a group effort for the Capstone
+                                    course at George Brown College. It was designed and deployed with the work of myself
+                                    and three of my fellow colleagues.
                                 </p>
                             </div>
                         </div>
@@ -53,10 +47,10 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img src="../img/cap7.PNG" alt="GraphQL" class="work-pic">
+                                <img src="../img/snm2.PNG" alt="GraphQL" class="work-pic">
                             </div>
                             <div class="flip-card-back">
-                                <h1>GraphQL</h1>
+                                <h1>Stray No More</h1>
                                 <p>
                                     This is a GraphQL assignment that uses MongoDB to store and retrieve
                                     all user inserted data to and from the webpage. This application allows
@@ -81,10 +75,10 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img src="../img/guide1.PNG" alt="Weather App" class="work-pic">
+                                <img src="../img/snm3.PNG" alt="Weather App" class="work-pic">
                             </div>
                             <div class="flip-card-back">
-                                <h1>Restaurant Guide</h1>
+                                <h1>Stray No More</h1>
                                 <p>
                                     The Restaurant Guide android application is a simple introduction into using
                                     Android Studio. The basis of the app is to allow users to create a dynamic list
@@ -102,42 +96,20 @@
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
-                                <img src="../img/guide2.PNG" alt="GraphQL" class="work-pic">
+                                <img src="../img/snm4.PNG" alt="GraphQL" class="work-pic">
                             </div>
                             <div class="flip-card-back">
-                                <h1>Restaurant Guide</h1>
+                                <h1>Stray No More</h1>
                                 <p>
                                     Once a user has tapped one of the restaurants on the list a page will be opened
                                     with more detail about the restaurant. This includes the restaurant name, address,
                                     phone number, description and tags which are all entered in by the user. A Google Maps
                                     view is also included on the page using the address inserted by the user to mark the
                                     location of the restaurant allowing the user to seamlessly find the directions
-                                    <hr>
-                                    From this screen the user can edit any details they would like, as well as share the
-                                    details of the restaurant on social media platforms such as Facebook, Twitter or by
-                                    email.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </td>
-        <td>
-            <div class="page-card">
-                <div class="page-title">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="../img/guide3.PNG" alt="GraphQL" class="work-pic">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>Restaurant Guide</h1>
-                                <p>
-                                    This is an example of the splash screen used in the application. From this point on
-                                    it would be use as my point of reference to monitor the progress in the development of
-                                    my skills in Android Studio and mobile application design. Many of the features within this
-                                    app are to be featured in The Stray No More Capstone project.
+                                <hr>
+                                From this screen the user can edit any details they would like, as well as share the
+                                details of the restaurant on social media platforms such as Facebook, Twitter or by
+                                email.
                                 </p>
                             </div>
                         </div>
@@ -147,5 +119,40 @@
         </td>
     </tr>
 </table>
+
+<div class="page-card">
+    <button class="accordion">Project Vision</button>
+    <div class="panel">
+        <iframe src="../filesrc/T24_Project_Vision.docx.pdf" width="100%" height="700px"></iframe>
+    </div>
+
+    <button class="accordion">Section 2</button>
+    <div class="panel">
+        <p>Lorem ipsum...</p>
+    </div>
+
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+        <p>Lorem ipsum...</p>
+    </div>
+</div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
 </body>
 </html>
